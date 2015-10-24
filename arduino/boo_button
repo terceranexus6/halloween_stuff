@@ -1,3 +1,13 @@
+bitbloqbitbloq, a bq product
+Menú de usuario
+Acceder
+Espacio de trabajo
+Navegación principal
+Nuevo proyecto			Verificar	
+Cargar
+Más opciones		¿Necesitas ayuda?
+Proyecto sin título
+           BLOQUES  CÓDIGO  
 /***   Global variables   ***/
 int luz;
 
@@ -8,7 +18,7 @@ void setup()
   pinMode(4,INPUT_PULLUP);
 
 
-  lightb=digitalRead(4); //this is a button now
+  luz=digitalRead(4);
 
   pinMode(7,OUTPUT);
 
@@ -19,11 +29,17 @@ void setup()
 
 void loop()
 {
-  if (lightb < 200) {
+  if (luz < 200) {
     digitalWrite(7,HIGH);
     digitalWrite(8,HIGH);
+    tone(12,349,1);
+    delay(1);
+    tone(12,329,1);
+    delay(1);
+    tone(12,293,2);
+    delay(2);
    }
-  if (lightb >= 200) {
+  if (luz >= 200) {
     digitalWrite(7,HIGH);
     digitalWrite(8,HIGH);
    }
