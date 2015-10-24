@@ -18,16 +18,16 @@ void setup()
 void loop()
 {
   if (light == 200) {
-    digitalWrite(7,HIGH);
+    digitalWrite(7,HIGH); //leds
     digitalWrite(8,HIGH);
-    tone(12,349,1000);
+    tone(12,349,1000); //tone
     delay(1000);
     tone(12,329,1000);
     delay(1000);
     tone(12,293,2000);
     delay(2000);
    }
-  if (light == 200) {
+  if (light == 200) { //leds off
     digitalWrite(7,LOW);
     digitalWrite(8,LOW);
    }
