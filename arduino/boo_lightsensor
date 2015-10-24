@@ -2,38 +2,39 @@
 int light;
 
 /***   Function declaration   ***/
-/*** this works in a freeduino bq -teorically-***/
 
 void setup()
 {
 
-  light=analogRead(A0); //lightsensor
+  light=(A0);
 
-  pinMode(7,OUTPUT); //led1
+  pinMode(7,OUTPUT);
 
-  pinMode(8,OUTPUT); //led2
+  pinMode(8,OUTPUT);
 
 }
 
 
 void loop()
 {
-  if (light < 200) { 
-    digitalWrite(7,HIGH); //turn on leds
+  if (light == 200) {
+    digitalWrite(7,HIGH);
     digitalWrite(8,HIGH);
-    
-    tone(12,349,1); //fa //turn on tone
-    delay(1);
-    tone(12,329,1); //mi
-    delay(1);
-    tone(12,293,2); //re~ 
-    delay(2);
+    tone(12,349,1000);
+    delay(1000);
+    tone(12,329,1000);
+    delay(1000);
+    tone(12,293,2000);
+    delay(2000);
    }
-  if (light >= 200) {
-    digitalWrite(7,HIGH); //turn off leds
-    digitalWrite(8,HIGH);
+  if (light == 200) {
+    digitalWrite(7,LOW);
+    digitalWrite(8,LOW);
    }
 
 }
+
+/***   Function definition   ***/
+Historial
 
 /***   Function definition   ***/
