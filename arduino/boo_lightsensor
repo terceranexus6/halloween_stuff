@@ -1,5 +1,5 @@
 /***   Global variables   ***/
-int luz;
+int light;
 
 /***   Function declaration   ***/
 /*** this works in a freeduino bq -teorically-***/
@@ -21,6 +21,13 @@ void loop()
   if (light < 200) { 
     digitalWrite(7,HIGH); //turn on leds
     digitalWrite(8,HIGH);
+    
+    tone(12,349,1); //fa //turn on tone
+    delay(1);
+    tone(12,329,1); //mi
+    delay(1);
+    tone(12,293,2); //re~ 
+    delay(2);
    }
   if (light >= 200) {
     digitalWrite(7,HIGH); //turn off leds
