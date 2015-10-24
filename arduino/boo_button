@@ -1,0 +1,34 @@
+/***   Global variables   ***/
+int luz;
+
+/***   Function declaration   ***/
+
+void setup()
+{
+  pinMode(4,INPUT_PULLUP);
+
+
+  lightb=digitalRead(4); //this is a button now
+
+  pinMode(7,OUTPUT);
+
+  pinMode(8,OUTPUT);
+
+}
+
+
+void loop()
+{
+  if (lightb < 200) {
+    digitalWrite(7,HIGH);
+    digitalWrite(8,HIGH);
+   }
+  if (lightb >= 200) {
+    digitalWrite(7,HIGH);
+    digitalWrite(8,HIGH);
+   }
+
+}
+
+/***   Function definition   ***/
+Historial
