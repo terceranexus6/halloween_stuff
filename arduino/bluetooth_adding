@@ -1,0 +1,12 @@
+/*in the variable dec  */
+
+  pinMode(0,INPUT);
+  pinMode(1, OUTPUT);
+  blueToothSerial.begin(38400);
+  blueToothSerial.flush();
+  
+  /*in void loop*/
+  
+    delay(2000);
+    blueToothSerial.write( "I scared you!" );
+    delay(2000);
