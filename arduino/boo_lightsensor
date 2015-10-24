@@ -18,11 +18,11 @@ void setup()
 
 void loop()
 {
-  if (luz < 200) { 
+  if (light < 200) { 
     digitalWrite(7,HIGH); //turn on leds
     digitalWrite(8,HIGH);
    }
-  if (luz >= 200) {
+  if (light >= 200) {
     digitalWrite(7,HIGH); //turn off leds
     digitalWrite(8,HIGH);
    }
